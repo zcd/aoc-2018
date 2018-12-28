@@ -1,7 +1,7 @@
 (ns aoc-2018.day-01
   (:use [aoc-2018.core]))
 
-(->> (read-lines "resources/input-1")
+(->> (read-lines "resources/input-01")
    (map #(Integer/parseInt %))
    (apply +))
 
@@ -18,6 +18,6 @@
                (conj seen total)
                total)))))
 
-(->> (read-lines "resources/input-1")
+(->> (read-lines "resources/input-01")
    (map #(Integer/parseInt %))
    (first-cumulative-repeat))

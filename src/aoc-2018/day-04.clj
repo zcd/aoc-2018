@@ -67,7 +67,7 @@
      (into (sorted-map))))
 
 (def per-shift-logs
-  (->> (read-lines "resources/input-4")
+  (->> (read-lines "resources/input-04")
      (map interpret-log)
      (group-logs)))
 
@@ -157,7 +157,7 @@
                              rest-closers)))))
 
 (->> (sleep-interval-mins sleepiest-guard)
-   (process-sleep-intervals)
+   (process-sleep-intervals-dbg)
    (apply max-key :depth)
    (:lower-bound)
    (* sleepiest-guard))
@@ -167,7 +167,7 @@
    (map (fn [[guard-id intervals]]
           (assoc 
            (->> intervals
-              (process-sleep-intervals)
+              (process-sleep-intervals-dbg)
               (apply max-key :depth))
            :id guard-id)))
    (apply max-key :depth)

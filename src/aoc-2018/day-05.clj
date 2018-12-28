@@ -31,7 +31,7 @@
             (recur rest-chars
                    (conj acc next-char))))))
 
-(def polymer (->> (slurp "resources/input-5")
+(def polymer (->> (slurp "resources/input-05")
                 (clojure.string/trim)))
 
 (->> polymer

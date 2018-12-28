@@ -15,7 +15,7 @@
 
 (twoseq-and-threeseq "wsehyudplumeqvajtbiosngkxc")
 
-(->> (read-lines "resources/input-2")
+(->> (read-lines "resources/input-02")
    (map twoseq-and-threeseq)
    (reduce (fn [[twos-l threes-l]
                [twos-r threes-r]]
@@ -32,7 +32,7 @@
 (char-diff "abcde" "axcye")
 (char-diff "fguij" "fghij")
 
-(->> (read-lines "resources/input-2")
+(->> (read-lines "resources/input-02")
 
    ;; Cartesian product with itself
    (repeat)

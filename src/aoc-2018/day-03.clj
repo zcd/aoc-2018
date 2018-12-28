@@ -96,6 +96,6 @@
                             claims)))
           claims))
 
-(->> (read-lines "resources/input-3")
+(->> (read-lines "resources/input-03")
    (map interpret-claim)
    find-non-overlapping-claim)
