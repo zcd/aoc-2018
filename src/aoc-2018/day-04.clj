@@ -173,4 +173,3 @@
    (apply max-key :depth)
    (#(* (:lower-bound %)
          (:id %))))
-

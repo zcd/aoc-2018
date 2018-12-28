@@ -5,4 +5,3 @@
   [file-path]
   (-> (slurp file-path)
      (split-lines)))
-
